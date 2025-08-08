@@ -274,6 +274,86 @@
             color: #333;
         }
 
+        /* Solutions Section */
+        .solutions {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 50px;
+            margin-top: 60px;
+        }
+
+        .solution-card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .solution-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .solution-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+
+        .solution-card h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .solution-tagline {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .solution-description {
+            margin-bottom: 30px;
+        }
+
+        .solution-description p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .solution-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .feature-tag {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
         /* Why Choose Us */
         .why-choose {
             padding: 100px 0;
@@ -501,6 +581,18 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .solution-card {
+                padding: 30px 25px;
+            }
+
+            .solution-card h3 {
+                font-size: 2rem;
+            }
         }
 
         /* Smooth scrolling */
@@ -518,6 +610,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu" id="mobileMenu">
@@ -586,6 +679,58 @@
                     <div class="service-icon">🚀</div>
                     <h3>Innovation Consulting</h3>
                     <p>Strategic guidance on digital transformation, AI adoption, and technology roadmaps to accelerate your business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2 class="section-title">Our Solutions</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-logo">
+                            <img src="images/taxium_logo.png" alt="Taxium Logo" style="max-height: 80px; max-width: 300px; object-fit: contain;">
+                        </div>
+                        <p class="solution-tagline">Advanced Australian Tax AI Platform</p>
+                    </div>
+                    <div class="solution-description">
+                        <p>Taxium is an advanced Australian Tax AI platform designed to simplify complex tax research and advisory work. Built with cutting-edge artificial intelligence, it offers instant answers to tax law queries and smart insights tailored to Australian regulations.</p>
+                        
+                        <p>Whether you're an accountant, business owner, or individual taxpayer, Taxium streamlines research, reduces uncertainty, and improves decision-making. The intuitive interface allows users to interact naturally, receiving clear, reliable guidance backed by up-to-date legislation.</p>
+                        
+                        <p>Taxium is the intelligent assistant that transforms the way tax professionals and taxpayers access and interpret Australian tax information.</p>
+                    </div>
+                    <div class="solution-features">
+                        <div class="feature-tag">AI-Powered Research</div>
+                        <div class="feature-tag">Australian Tax Law</div>
+                        <div class="feature-tag">Instant Answers</div>
+                        <div class="feature-tag">Professional Grade</div>
+                    </div>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-header">
+                        <div class="solution-logo">
+                            <img src="images/portix_logo.png" alt="Portix Logo" style="max-height: 80px; max-width: 300px; object-fit: contain;">
+                        </div>
+                        <p class="solution-tagline">Secure Cloud-Ready Client Portal</p>
+                    </div>
+                    <div class="solution-description">
+                        <p>Portix is a secure, cloud-ready client portal designed to streamline communication, document sharing, and task management between professionals and their clients. Built with enterprise-grade security, Portix offers multi-factor authentication, role-based access, and encrypted file storage.</p>
+                        
+                        <p>Its intuitive interface allows Admins and Staff to create customisable forms, set automated reminders, and track progress effortlessly. Clients can securely access documents, complete forms, and stay updated on tasks anytime, anywhere.</p>
+                        
+                        <p>With robust API integration, Portix connects seamlessly with other business tools, making it the ideal hub for accountants, lawyers, consultants, and service providers who value efficiency and trust.</p>
+                    </div>
+                    <div class="solution-features">
+                        <div class="feature-tag">Enterprise Security</div>
+                        <div class="feature-tag">Document Sharing</div>
+                        <div class="feature-tag">Task Management</div>
+                        <div class="feature-tag">API Integration</div>
+                    </div>
                 </div>
             </div>
         </div>
